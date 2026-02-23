@@ -29,7 +29,7 @@ export function InteractiveGrid() {
     const maskImage = useMotionTemplate`radial-gradient(400px circle at ${springX}px ${springY}px, black, transparent)`;
 
     return (
-        <div ref={ref} className="absolute inset-0 z-[1] overflow-hidden pointer-events-none">
+        <div ref={ref} dir="ltr" className="absolute inset-0 z-[1] overflow-hidden pointer-events-none">
             {/* The base grid */}
             <div
                 className="absolute inset-0 opacity-[0.15]"
