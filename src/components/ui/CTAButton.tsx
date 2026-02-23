@@ -40,7 +40,7 @@ export function CTAButton() {
                 {/* Hover Light Sweep */}
                 <div className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/20 to-transparent group-hover:animate-[sweep_1.5s_ease-in-out_infinite]" />
 
-                <span className="relative z-10 text-sm md:text-base tracking-wide drop-shadow-sm">{text}</span>
+                <a href="https://forms.gle/jedyEVRXriRFkPCy7" target="_blank" rel="noopener noreferrer" className="relative z-10 text-sm md:text-base tracking-wide drop-shadow-sm">{text}</a>
 
                 <ArrowIcon className={cn(
                     "w-5 h-5 relative z-10 text-accent transition-transform duration-300",
