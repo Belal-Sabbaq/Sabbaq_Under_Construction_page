@@ -5,9 +5,9 @@ import Image from "next/image";
 
 export function LogoStrip() {
     const logos = [
-        { name: "NLES", src: "/NLESBDC.png", role: "Leadership" },
-        { name: "Sabbaq", src: "/SabbaqBDC.png", role: "Technology" },
-        { name: "Horus", src: "/HORUSBDC.png", role: "Investment" },
+        { name: "NLES", src: "/NLESBDC.png", role: "Leadership", url: "https://NLESBDC.com" },
+        { name: "Sabbaq", src: "/SabbaqBDC.png", role: "Technology", url: "#" },
+        { name: "Horus", src: "/HORUSBDC.png", role: "Investment", url: "https://HorusBDC.com" },
     ];
 
     // Animation variants setup for staggering parent -> child
@@ -43,12 +43,14 @@ export function LogoStrip() {
 
                     {/* Logo Visual */}
                     <div className="relative w-20 h-20 md:w-28 md:h-28 flex items-center justify-center mb-3">
-                        <Image
-                            src={logo.src}
-                            alt={`${logo.name} Logo`}
-                            fill
-                            className="object-contain group-hover:drop-shadow-[0_0_12px_rgba(54,189,177,0.6)] transition-all duration-300 z-10 p-2"
-                        />
+                        <a href={logo.url} target="_blank" rel="noopener noreferrer">
+                            <Image
+                                src={logo.src}
+                                alt={`${logo.name} Logo`}
+                                fill
+                                className="object-contain group-hover:drop-shadow-[0_0_12px_rgba(54,189,177,0.6)] transition-all duration-300 z-10 p-2"
+                            />
+                        </a>
                     </div>
 
                     {/* Role Label - Hidden initially, slides up on hover */}
