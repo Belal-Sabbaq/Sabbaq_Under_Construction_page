@@ -12,7 +12,7 @@ export const dictionary = {
                 part2: " is being built to empower the ",
                 bold2: "next generation of leaders.",
             },
-            hook: "Do you have what it takes to lead the Digital Future?",
+            hook: "Do you have what it takes to lead the Digital Future? Stay Tuned!",
         },
         cta: {
             button: "Apply for the Founding Cohort",
@@ -30,9 +30,9 @@ export const dictionary = {
                 part1: "يتم الآن بناء ",
                 bold1: "منظومة متكاملة",
                 part2: " لتمكين ",
-                bold2: "الجيل القادم من قادة المستقبل.",
+                bold2: "الجيل القادم من قيادة المستقبل.",
             },
-            hook: "هل ترى في نفسك قائداً للمستقبل الرقمي؟",
+            hook: "هل ترى في نفسك قائداً للمستقبل الرقمي؟ ترقبوا المزيد!",
         },
         cta: {
             button: "تقدم بطلب الترشح للدفعة التأسيسية",

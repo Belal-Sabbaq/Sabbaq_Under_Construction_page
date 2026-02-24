@@ -7,30 +7,27 @@ import { InteractiveGrid } from "@/components/ui/InteractiveGrid";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-background relative overflow-hidden flex flex-col selection:bg-accent/30 selection:text-white">
-      {/* Deep Background Layer (Level 0) */}
-      <AnimatedBackground />
+    <main className="h-screen overflow-hidden flex flex-col bg-background relative">
 
-      {/* Interactive Grid Layer (Level 1) */}
+      <AnimatedBackground />
       <InteractiveGrid />
 
-      {/* Foreground Header (Level 2) */}
-      <div className="w-full max-w-7xl mx-auto px-6 py-8 flex justify-between items-center relative z-20">
-        <div className="flex-1" />
+      {/* Header */}
+      <div className="py-[clamp(12px,2vh,32px)] flex justify-end px-6 z-20">
         <LanguageToggle />
       </div>
 
-      {/* Main Content (Level 3) */}
-      <div className="flex flex-col items-center justify-center flex-grow w-full relative z-30 pb-24">
+      {/* Content */}
+      <div className="flex flex-col items-center justify-center flex-grow min-h-0 gap-[clamp(12px,3vh,40px)] z-30">
         <LogoStrip />
         <HeroSection />
-        <CTAButton />
       </div>
 
-      {/* Footer minimal */}
-      <footer className="w-full py-8 flex justify-center items-center text-xs text-neutral/40 relative z-20 border-t border-white/5">
+      {/* Footer */}
+      <footer className="py-[clamp(8px,1.5vh,20px)] text-xs text-neutral/40 border-t border-white/5 z-20 flex justify-center">
         <p>&copy; {new Date().getFullYear()} Sabbaq. All rights reserved.</p>
       </footer>
+
     </main>
   );
 }
