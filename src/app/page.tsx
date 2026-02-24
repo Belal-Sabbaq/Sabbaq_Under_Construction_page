@@ -7,7 +7,7 @@ import { InteractiveGrid } from "@/components/ui/InteractiveGrid";
 
 export default function Home() {
   return (
-    <main className="h-screen overflow-hidden flex flex-col bg-background relative">
+    <main className="h-screen md:h-screen overflow-hidden md:overflow-hidden overflow-y-auto flex flex-col bg-background">
 
       <AnimatedBackground />
       <InteractiveGrid />
